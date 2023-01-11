@@ -1,6 +1,4 @@
 // Reset the browser defaults
-@import "./media";
-
 *{
     margin : 0;
     padding : 0;
@@ -9,8 +7,10 @@
 }
 
 :root{
-    --color-primary : #191d2b;
-    --color-secondary : #27AE60;
+    --color-primary : #1D2525;
+    --color-secondary : #5089CF;
+    --color-tertiary : #6385AF;
+    --color-quaternary : #3D8CEF;
     --color-white : white;
     --color--black : black;
     --color--gray0 : #f8f8f8;
@@ -21,13 +21,13 @@
     --color-gray-5 : #2a2e35;
     --color-gray-6 : #12181b;
     --br-sm-2 : 14px;
-    --box-shadow-1 : 0 3px 15px rgba(0,0,0,0.3)
+    --box-shadow-1 : 0 3px 15px rgba(0,0,0,0.3);
 }
 
 .light-mode{
-    --color-primary : #b3b6c3;
-    --color-secondary : #4c80d9;
-    --color-white : rgb(91, 83, 83);
+    --color-primary : #546E7A;
+    --color-secondary : #FFF176;
+    --color-white : white;
     --color--black : black;
     --color--gray0 : #f8f8f8;
     --color-gray-1 : #b2becd;
@@ -37,7 +37,7 @@
     --color-gray-5 : #2a2e35;
     --color-gray-6 : #12181b;
     --br-sm-2 : 14px;
-    --box-shadow-1 : 0 3px 15px rgba(0,0,0,0.3)
+    --box-shadow-1 : 0 3px 15px rgba(0,0,0,0.3);
 }
 
 
@@ -197,7 +197,7 @@ section{
             left : 0;
             top : 0;
             z-index : -1;
-            clip-path: polygon(65% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(80% 0, 60% 50%, 94% 95%, 94% 99%, 50% 96%, 30% 97%, 0 95%, 0% 43%, 0 0);
         }
         .image{
             border-radius : var(--br-sm-2);
@@ -224,15 +224,18 @@ section{
         flex-direction : column;
         justify-content : center;
         padding-right : 18rem;
+
         .name{
             font-size : 2.5rem;
+            justify-content : center;
+            align-content : center;
             span{
                 color : var(--color-secondary);
             }
         }
-        p{
+        .skills{
+            flex-direction: column;
             margin : 1.5rem 0;
-            line-height : 2rem;
         }
     }
 
@@ -658,6 +661,3 @@ section{
         }
     }
 }
-
-
-@import "./media";
