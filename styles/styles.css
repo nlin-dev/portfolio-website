@@ -267,8 +267,8 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
-  width: 68%;
+  height: 85%;
+  width: 65%;
   margin-left: 4rem;
   background-color: var(--color-black);
   -webkit-transition: all .4s ease-in-out;
@@ -282,13 +282,13 @@ section {
      object-fit: cover;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  -webkit-filter: grayscale(75%);
-          filter: grayscale(75%);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 }
 
 .header-content .left-header .image img:hover {
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
+  -webkit-filter: grayscale(2%);
+          filter: grayscale(2%);
 }
 
 .header-content .right-header {
@@ -804,6 +804,7 @@ section {
 }
 
 .main-btn {
+  margin-top : 50px;
   border-radius: 30px;
   color: inherit;
   font-weight: 600;

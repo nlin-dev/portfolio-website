@@ -14,6 +14,7 @@ function PageTransitions(){
         })
     }
 
+
     // Changing the active class of each section
     allSections.addEventListener("click", (e)=>{
         const id = e.target.dataset.id;
