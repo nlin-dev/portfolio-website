@@ -1,9 +1,9 @@
 body{
-    background-color : white;
+    background-color : #1E1E1E;
 }
 
 nav, section, footer {
-    padding : 20px;
+    padding : 15px;
     margin : 10px;
 }
 
@@ -12,7 +12,7 @@ header {
     display : flex; /* Use flexbox to align items in a row */ 
     justify-content : space-between; /* Space out logo and navigation */
     align-items : center; /* Center items vertically */
-    padding : 0px; /* Add some padding around the items */
+    padding : 5px; /* Add some padding around the items */
     position : fixed; /* Fixed position to keep header at the top */
     width : 100%; /* Ensure header spans the full width of the page */
     top : 0; /* Align header at the top of the viewport */
@@ -53,42 +53,64 @@ header nav ul{
 }
 header nav ul li {
     display : inline;
-    padding : 0 20px; /* Add some padding between navigational items */
+    padding : 0 45px; /* Add some padding between navigational items */
     margin-right : 10px;
 }
 header nav ul li a {
-    color : white; /* Sets text color to white */
-    text-decoration : none; /* Removes the underline from font */
-    font-family : "Robot", sans-serif; 
+    color : white; 
+    font-family : "Teko", sans-serif; 
+    text-decoration : none; 
+    font-size : 1.5em;
 }
-header nav ul li a : hover{
+header nav ul li a:hover{
     text-decoration : underline;
 }
 
-.container {
-    width : 80%;
-    margin : auto;
-    overflow : hidden;
-}
-
 .main-photo-container {
-    padding-top : 905px;
-    width : 100%;
-    max-height : 65vh;
-    overflow : hidden; /* Ensures image doesn't cause scrollbars */
+    background-color : #0A0A0A;
     position : relative; /* Needed for absolute positioning of child element */
+    width : 100%;
+    margin-top : 90px;
+    height : 60vh;
+    overflow : hidden; /* Ensures image doesn't cause scrollbars */
+    margin-left : -10px;
 }
 .main-photo-container .main-photo {
-    width : 110%;
-    height : auto;
     position : absolute; /* Position image absolutely so can be sized correctly */
-    top : 50%; 
-    left : 50%; /* Ensure image is centered in container */
-    transform : translate(-50%, -50%); /* Ensures center of image is sized correctly */
-    min-height : 100vh; /* Ensures image covers container fully at all times */
-    min-width : 100vw; /* Ensures image covers container fully at all times */
-    object-fit : cover; /* Ensures image covers container without stretching */
+    top : 0;
+    left : 0;
+    height : 63vh;
+    width : 100%;
+    object-fit : cover;
 }
+
+.main-introduction{
+    text-align : center;
+}
+.main-introduction h1 {
+    font-family: 'Anton', sans-serif;
+    color : white;
+    font-size : 3.5em;
+    margin-bottom : -5px;
+}
+.main-introduction h1 .LIN-name-highlight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size : 1.75em;
+    color : #D65340;
+    padding-left : 5px;
+    padding-right : 13px;
+}
+.main-introduction p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size : 2em;
+    color : white;
+    line-height: 2.2; 
+}
+
 .box{
     width : 45%;
     margin : 2.5%;
