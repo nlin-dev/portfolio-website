@@ -1,3 +1,5 @@
+/* Stylesheet for mid-size mobile devices (phones, etc.) */
+
 body{
     background-color : #1E1E1E;
 }
@@ -27,18 +29,27 @@ header img{
     justify-content : flex-start; /* Align logo to the start */
 }
 .hamburger-menu{
-    display : none;
+    display : block;
+    cursor : pointer;
+}
+.hamburger-menu.active + nav ul {
+    display : block;
+    position : absolute;
+    width : 100%;
+    top : 100%; /* Position dropdown right below the header */
 }
 .logo-image{
     flex : 1;
-    max-width : 6vh;
+    max-width : 4vh;
     height : auto;
-    padding-left : 15px;
 }
 .written-logo{
     flex : 1;
-    min-width : 15vh;
-    height : auto;
+    min-width : 12vh;
+    height : auto; 
+}
+.logo-image, .written-logo {
+    left : 0;
 }
 
 header nav{
@@ -48,7 +59,7 @@ header nav{
 }
 header nav ul{
     list-style : none; /* Remove default list styling (bullet points) */
-    display : flex; /* Display the navigational items inline*/
+    display : none; /* Display the navigational items inline*/
     margin : 0; /* Removes default margin */
     padding : 0; /* Removes default padding */ 
     justify-content : center; /* Center the list of items */

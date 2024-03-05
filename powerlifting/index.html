@@ -2,11 +2,23 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!-- Default stylesheet for all devices, emphasis on tablets -->
+    <link rel = "stylesheet" href = "styles/styles.css">
+
+    <!-- Medium devices (tablets, 768px and up) -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="styles/mobile.css">
+
+    <!-- Medium devices (tablets, 768px and up) -->
+    <link rel="stylesheet" media="(min-width: 768px)" href="styles/tablet.css">
+
+    <!-- Extra large devices (large desktops, 1200px and up) -->
+    <link rel="stylesheet" media="(min-width: 1200px)" href="styles/desktop.css">
+
+
     <title> LIN Powerlifting </title>
     
-    <link rel = "stylesheet" href = "styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -22,6 +34,7 @@
 
 <body>
     <header>
+        <img src="images/hamburger.png" alt="Menu" class = "hamburger-menu">
         <img src = "images/logo.png" alt = "LIN Powerlifting Logo" class = "logo-image">
         <img src = "images/LIN_logo.jpg" alt = "LIN Written Logo" class = "written-logo">
         <nav> 
@@ -74,6 +87,9 @@
             </a>
         </div>
         <div class = "clear"> </div> -->
+
+        <!-- Links to JS files -->
+        <script src = "js/header-toggle.js"> </script>
 
     </footer>
 
