@@ -1,26 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+body {
+    font-family: Arial, sans-serif;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.navbar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+button, .icon-btn {
+    border: 2px solid black;
+    background: white;
+    padding: 8px 15px;
+    cursor: point;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-main {
-    padding: 20px;
+.name-btn {
+    font-style: italic;
+    width: 120px;
+}
+
+.nav-btn {
+    width: 110px;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+icon-btn img {
+    width: 20px;
+    height: 20px;
 }
