@@ -1,3 +1,10 @@
+/* Custom Fonts */
+.pt-sans-bold {
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,46 +17,82 @@ body {
 
 .navbar{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     padding: 10px;
-    border: 2px solid red;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    border: 0px solid red;
+}
+
+/* Left navbar: Name Button */
+.nav-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.name-btn {
+    margin-left: 10px;
+    margin-right: 25px;
+    width: 225px;
+    height: 50px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+.name-btn img{
+    width: 175px;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease;
+}
+.name-btn:hover img {
+    cursor: grab;
+    transform: scale(1.01);
+}
+
+/* Middle navbar: Nav Buttons */
+.nav-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     gap: 10px;
-    background: white;
+}
+
+.nav-btn {
+    font-family: "PT Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 110px;
+    text-align: center;
+}
+
+/* Right navbar: Social Icons */
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 /* Button styling */
 a {
     text-decoration: none;
-    border: 2px solid black;
     background: white;
     padding: 8px 15px;
-    cursor: point;
+    cursor: grab;
     font-size: 16px;
     font-weight: bold;
-    display: inline-block;
-    text-align: center;
     color: black;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
 a:hover {
     transform: scale(1.1);
-    background-color: lightgray;
-}
-
-/* Name button */
-.name-btn {
-    font-style: italic;
-    width: 120px;
-}
-
-/* Standard navigation buttons */
-.nav-btn {
-    width: 110px;
+    background-color: #F1F1F1;
 }
 
 /* Icon buttons */
@@ -63,11 +106,67 @@ a:hover {
 }
 
 .icon-btn img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease;
 }
-
 .icon-btn:hover img {
     transform: rotate(360deg);
+}
+
+
+/* INDEX.HTML SPECIFIC STYLING */
+.hero-container {
+    background-color: #14181D;
+    width: 100%;
+    min-height: 50vh;
+    background: url("../graphics/homepage/home_about_background.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    margin-top: 74px;
+    flex-wrap: wrap;
+}
+
+.photo-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-container img {
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+    object-fit: contain;
+}
+
+.about-container {
+    width: 500px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid gold;
+}
+.about-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 846px) {
+    .hero-container {
+        padding-top: 25px;
+        padding-bottom: 15px;
+        flex-direction: column;   /* Stack vertically on smaller screens */
+        align-items: center;
+        gap: 0px;
+    }
+
 }
