@@ -21,24 +21,38 @@ body {
     background: white;
 }
 
-button, .icon-btn {
+/* Button styling */
+a {
+    text-decoration: none;
     border: 2px solid black;
     background: white;
     padding: 8px 15px;
     cursor: point;
     font-size: 16px;
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+a:hover {
+    transform: scale(1.1);
+    background-color: lightgray;
+}
+
+/* Name button */
 .name-btn {
     font-style: italic;
     width: 120px;
 }
 
+/* Standard navigation buttons */
 .nav-btn {
     width: 110px;
 }
 
+/* Icon buttons */
 .icon-btn {
     display: flex;
     align-items: center;
@@ -48,7 +62,12 @@ button, .icon-btn {
     border-radius: 5px;
 }
 
-icon-btn img {
+.icon-btn img {
     width: 20px;
     height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon-btn:hover img {
+    transform: rotate(360deg);
 }
