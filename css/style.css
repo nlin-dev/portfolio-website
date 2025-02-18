@@ -13,18 +13,25 @@
 
 body {
     font-family: Arial, sans-serif;
+    padding-top: 55px;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100vw;
 }
 
 .navbar{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
-    right: 0px;
+    width: 100vw;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
+    z-index: 1000;
     border: 0px solid red;
+    border-bottom: 3px solid #191a1d;
 }
 
 /* Left navbar: Name Button */
@@ -118,22 +125,20 @@ a:hover {
 /* INDEX.HTML SPECIFIC STYLING */
 .hero-container {
     background-color: #14181D;
-    width: 100%;
-    min-height: 50vh;
+    width: 100vw;
+    height: 50vh;
     background: url("../graphics/homepage/home_about_background.png") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    position: relative;
-    margin-top: 74px;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .photo-container {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,10 +164,85 @@ a:hover {
     object-fit: contain;
 }
 
+/* Projects Containers */
+.projects-container {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+.projects-title {
+    text-align: center;
+    border: 0px solid red;
+    padding-top: 15px;
+    margin: 0px;
+}
+.projects-title img {
+    width: 300px;
+    object-fit: contain;
+}
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.project-box {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid black;
+    text-align: center;
+}
+.project-image {
+    width: 100%;
+    border: 0px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.project-image:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+.project-video {
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid gold;
+    overflow: hidden;
+}
+.project-video video {
+    width: 105.6%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.project-video:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+
 /* Responsive Design */
 @media (max-width: 846px) {
     .hero-container {
-        padding-top: 25px;
+        padding-top: 70px;
+        width: 101%;
         padding-bottom: 15px;
         flex-direction: column;   /* Stack vertically on smaller screens */
         align-items: center;
@@ -170,3 +250,4 @@ a:hover {
     }
 
 }
+
