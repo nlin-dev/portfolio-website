@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+.html, body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+}
 body {
     font-family: Arial, sans-serif;
     padding-top: 55px;
@@ -49,10 +54,12 @@ body {
     border: none;
     background-size: contain;
     cursor: pointer;
+    justify-content: center;
+    align-content: center;
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 .name-btn img{
-    width: 175px;
+    width: 180px;
     height: auto;
     display: block;
     transition: transform 0.2s ease;
@@ -60,6 +67,32 @@ body {
 .name-btn:hover img {
     cursor: grab;
     transform: scale(1.01);
+}
+
+/* Hide Hamburger on large screens */
+.menu-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 114px;
+    margin-bottom: 10px;
+}
+.menu-icon img {
+    display: none;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.8s ease;
+}
+.menu-icon:hover img {
+    transform: scale(1.1);
+    transform: rotate(-360deg);
 }
 
 /* Middle navbar: Nav Buttons */
@@ -92,7 +125,7 @@ a {
     background: white;
     padding: 8px 15px;
     cursor: grab;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: black;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -113,9 +146,9 @@ a:hover {
 }
 
 .icon-btn img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.8s ease;
 }
 .icon-btn:hover img {
     transform: rotate(360deg);
@@ -125,43 +158,44 @@ a:hover {
 /* INDEX.HTML SPECIFIC STYLING */
 .hero-container {
     background-color: #14181D;
-    width: 100vw;
-    height: 50vh;
+    height: 525px;
     background: url("../graphics/homepage/home_about_background.png") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+    gap: 40px;
+    padding: 20px;
 }
 
 .photo-container {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .photo-container img {
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0.8;
+    width: 300px;
+    height: auto;
+    opacity: 0.9;
     object-fit: contain;
 }
 
 .about-container {
-    width: 500px;
-    height: 280px;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid gold;
+    border: 0px solid red;
+    text-align: center;
+    flex-shrink: 0;
 }
 .about-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 800px;
     object-fit: contain;
+    border: 0px solid gold;
 }
 
 /* Projects Containers */
@@ -239,14 +273,46 @@ a:hover {
 
 
 /* Responsive Design */
-@media (max-width: 846px) {
+@media (max-width: 1200px) {
+    .menu-icon {
+        display: block;
+    }
+    .menu-icon img {
+        display: block;
+    }
+    .nav-middle {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav-middle.active {
+        display: flex;
+    }
+    .nav-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
     .hero-container {
-        padding-top: 70px;
-        width: 101%;
-        padding-bottom: 15px;
+        height: 800px;
         flex-direction: column;   /* Stack vertically on smaller screens */
         align-items: center;
-        gap: 0px;
+    }
+    /* Style buttons to be full width */
+    .nav-menu button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: none;
+        text-align: center;
     }
 
 }
