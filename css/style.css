@@ -320,6 +320,103 @@ a:hover {
     border: 0px solid gold;
 }
 
+.powerlifting-section {
+    background-image: url("../graphics/homepage/powerlifting_background.jpg");
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 1500px;
+    border: 0px solid red;
+}
+.powerlifting-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    margin: 0 auto 0px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 10px;
+    max-width: 550px;
+    background: transparent;
+    border: 0px solid red;
+}
+.powerlifting-title-container:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
+}
+.powerlifting-logo {
+    min-width: 30%;
+    border: 0px solid green;
+}
+.powerlifting-logo img {
+    width: 95%;
+}
+.index-powerlifting-title {
+    min-width: 80%;
+}
+.index-powerlifting-title img{
+    width: 95%;
+    height: auto;
+    object-fit: contain;
+    border: 0px solid gold;
+}
+.powerlifting-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+    width: 1000px;
+    margin: 0 auto;
+    border: 0px solid gold;
+}
+.powerlifting-photo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    gap: 20px;
+    border: 0px solid brown;
+}
+.powerlifting-photo img {
+    width: 95%;
+}
+.powerlifting-description {
+    width: 500px;
+    border: 0px solid orange;
+}
+.powerlifting-coaching-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px solid green;
+}
+.powerlifting-coaching-description {
+    width: 90%;
+}
+.powerlifting-coaching-video {
+    height: 252px;
+    width: 420px;
+    border: 0px solid red;
+}
+.powerlifting-photo img,
+.powerlifting-description img,
+.powerlifting-coaching-video video,
+.powerlifting-coaching-description img {
+    width: 95%;
+    height: auto;
+    border-radius: 5px;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .menu-icon {
@@ -391,6 +488,32 @@ a:hover {
         align-content: center;
         padding: 0px;
         width: 600px;
+    }
+
+    .powerlifting-section {
+        max-height: 2000px;
+    }
+    .powerlifting-title-container {
+        margin-bottom: 0px;
+    }
+    .powerlifting-photo-container {
+        padding-bottom: 0px;
+        gap: 0px;
+    }
+    .powerlifting-photo-container img {
+        width: 90%;
+    }
+    .powerlifting-content-wrapper {
+        max-width: 490px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .powerlifting-coaching-container {
+        width: 105%;
+    }
+    .powerlifting-coaching-description {
+        width: 100%;
     }
 
 }
