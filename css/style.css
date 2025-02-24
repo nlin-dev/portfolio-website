@@ -373,13 +373,16 @@ a:hover {
     max-width: 65%;
     gap: 20px;
 }
+.powerlifting-photo {
+    width: 60%;
+}
 .powerlifting-photo img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 .powerlifting-description {
-    width: 115%;
+    width: 100%;
 }
 .powerlifting-coaching-container {
     flex: 1;
