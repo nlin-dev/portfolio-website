@@ -1,33 +1,32 @@
-/* Custom Fonts */
-.pt-sans-bold {
-    font-family: "PT Sans", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .html, body {
-    overflow-y: auto;
+    width: 100%;
     overflow-x: hidden;
-    height: 100%;
-}
-body {
     font-family: Arial, sans-serif;
     padding-top: 55px;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+.navbar {
+    width: 100%;
+    max-width: 100vw;
+}
+.projects-contact-wrapper,
+.powerlifting-section {
+    max-width: 100%;
     overflow-x: hidden;
-    margin: 0;
-    width: 100vw;
 }
 
 .navbar{
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100vw;
     padding: 10px;
     display: flex;
@@ -35,7 +34,6 @@ body {
     justify-content: space-between;
     background-color: white;
     z-index: 1000;
-    border: 0px solid red;
     border-bottom: 3px solid #191a1d;
 }
 
@@ -48,52 +46,21 @@ body {
 
 .name-btn {
     margin-left: 10px;
-    margin-right: 25px;
     width: 225px;
     height: 50px;
-    border: none;
-    background-size: contain;
     cursor: pointer;
-    justify-content: center;
-    align-content: center;
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 .name-btn img{
     width: 180px;
     height: auto;
     display: block;
-    transition: transform 0.2s ease;
 }
 .name-btn:hover img {
     cursor: grab;
     transform: scale(1.01);
 }
 
-/* Hide Hamburger on large screens */
-.menu-icon {
-    display: none;
-    width: 50px;
-    height: 50px;
-    background: none;
-    border: none;
-    cursor: grab;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 114px;
-    margin-bottom: 10px;
-}
-.menu-icon img {
-    display: none;
-    width: 50px;
-    height: 50px;
-    transition: transform 0.8s ease;
-}
-.menu-icon:hover img {
-    transform: scale(1.1);
-    transform: rotate(-360deg);
-}
 
 /* Middle navbar: Nav Buttons */
 .nav-middle {
@@ -115,6 +82,7 @@ body {
 .nav-right {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 10px;
 }
@@ -136,18 +104,41 @@ a:hover {
 }
 
 /* Icon buttons */
+/* Hide Hamburger on large screens */
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-icon img {
+    display: none;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.8s ease;
+}
+.menu-icon:hover img {
+    transform: scale(1.1);
+    transform: rotate(-360deg);
+}
 .icon-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
-    height: 40px;
+    height: auto;
     border-radius: 5px;
+    padding: 0;
 }
 
 .icon-btn img {
     width: 35px;
-    height: 35px;
+    height: auto;
+    object-fit: contain;
     transition: transform 0.8s ease;
 }
 .icon-btn:hover img {
@@ -324,108 +315,100 @@ a:hover {
     background-image: url("../graphics/homepage/powerlifting_background.jpg");
     background-size: cover;
     justify-content: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    max-height: 1500px;
-    border: 0px solid red;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 }
 .powerlifting-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    background: transparent;
+    gap: 10px;
     border-radius: 10px;
-    margin: 0 auto 0px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin-top: 10px;
     max-width: 550px;
-    background: transparent;
-    border: 0px solid red;
+    width: 95%;
 }
 .powerlifting-title-container:hover {
     transform: scale(1.05);
     background-color: #ddd;
 }
 .powerlifting-logo {
-    min-width: 30%;
-    border: 0px solid green;
+    flex-shrink: 0;
+    width: 20%;
 }
 .powerlifting-logo img {
-    width: 95%;
+    width: 100%;
 }
 .index-powerlifting-title {
-    min-width: 80%;
+    flex-grow: 1;
+    width: 80%;
 }
 .index-powerlifting-title img{
-    width: 95%;
+    width: 100%;
     height: auto;
     object-fit: contain;
-    border: 0px solid gold;
 }
 .powerlifting-content-wrapper {
     display: flex;
-    justify-content: space-between;
-    background: transparent;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    gap: 25px;
-    width: 1000px;
-    margin: 0 auto;
-    border: 0px solid gold;
+    gap: 10px;
+    max-width: 1200px;
+    width: 95%;
+    text-align: center;
 }
 .powerlifting-photo-container {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    max-width: 65%;
     gap: 20px;
-    border: 0px solid brown;
 }
 .powerlifting-photo img {
-    width: 95%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 .powerlifting-description {
-    width: 500px;
-    border: 0px solid orange;
+    width: 115%;
 }
 .powerlifting-coaching-container {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    max-width: 45%;
     padding: 20px;
     border-radius: 10px;
-    border: 0px solid green;
 }
 .powerlifting-coaching-description {
-    width: 90%;
+    width: 100%;
+}
+.powerlifting-coaching-description img {
+    width: 100%;
 }
 .powerlifting-coaching-video {
-    height: 252px;
-    width: 420px;
-    border: 0px solid red;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
 }
 .powerlifting-photo img,
 .powerlifting-description img,
 .powerlifting-coaching-video video,
 .powerlifting-coaching-description img {
-    width: 95%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .menu-icon {
-        display: block;
-    }
-    .menu-icon img {
-        display: block;
-    }
-
     .nav-menu button {
         width: 100%;
         padding: 10px;
@@ -452,6 +435,26 @@ a:hover {
     .nav-btn {
         width: 100%;
         text-align: center;
+    }
+    .nav-right {
+        display: flex;
+        gap: 8px;
+    }
+    .menu-icon {
+        width: 40px;
+        height: auto;
+    }
+    .menu-icon img {
+        display: flex;
+        width: 35px;
+        height: 40px;
+    }
+    .icon-btn {
+        width: 40px;
+        height: auto;
+    }
+    .icon-btn img {
+        width: 30px;
     }
     
     .hero-container {
@@ -490,11 +493,14 @@ a:hover {
         width: 600px;
     }
 
-    .powerlifting-section {
-        max-height: 2000px;
+    .powerlifting-content-wrapper {
+        flex-direction: column;
+        max-width: 95%;
+        gap: 30px;
     }
-    .powerlifting-title-container {
-        margin-bottom: 0px;
+    .powerlifting-photo-container,
+    .powerlifting-coaching-container {
+        max-width: 95%;
     }
     .powerlifting-photo-container {
         padding-bottom: 0px;
@@ -513,7 +519,7 @@ a:hover {
         width: 105%;
     }
     .powerlifting-coaching-description {
-        width: 100%;
+        width: 110%;
     }
 
 }
