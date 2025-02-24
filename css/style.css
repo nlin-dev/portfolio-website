@@ -111,14 +111,14 @@ a:hover {
     background: none;
     border: none;
     cursor: grab;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
 .menu-icon img {
     display: none;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 45px;
     transition: transform 0.8s ease;
 }
 .menu-icon:hover img {
@@ -220,6 +220,8 @@ a:hover {
 }
 
 .carousel {
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     max-width: 600px;
@@ -258,12 +260,12 @@ a:hover {
 }
 
 .video-box {
-    width: 100%;
-    max-width: 600px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 0px solid black;
+    width: 100%;
+    max-width: 1200px;
+    align-content: center;
     text-align: center;
 }
 .project-video {
@@ -330,6 +332,7 @@ a:hover {
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 550px;
     width: 95%;
 }
@@ -441,20 +444,21 @@ a:hover {
         gap: 8px;
     }
     .menu-icon {
+        display: flex;
         width: 40px;
         height: auto;
     }
     .menu-icon img {
         display: flex;
-        width: 35px;
-        height: 40px;
+        width: 40px;
+        height: 45px;
     }
     .icon-btn {
         width: 40px;
         height: auto;
     }
     .icon-btn img {
-        width: 30px;
+        width: 35px;
     }
     
     .hero-container {
