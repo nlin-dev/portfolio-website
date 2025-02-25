@@ -413,6 +413,20 @@ a:hover {
     border-radius: 5px;
 }
 
+
+/* PROJECTS SECTION STYLING */
+.projects-hero-container {
+    background-color: #14181D;
+    height: 525px;
+    background: url("../graphics/projects/projects_about_background.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .nav-menu button {
@@ -527,6 +541,15 @@ a:hover {
     }
     .powerlifting-coaching-description {
         width: 110%;
+    }
+
+    .projects-hero-container {
+        height: 800px;
+        max-height: 100vw;
+        min-height: 425px;
+        gap: 20px;
+        flex-direction: column;   /* Stack vertically on smaller screens */
+        align-items: center;
     }
 
 }
