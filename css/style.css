@@ -370,7 +370,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 65%;
+    max-width: 50%;
     gap: 20px;
 }
 .powerlifting-photo {
@@ -515,29 +515,23 @@ a:hover {
     }
 
     .powerlifting-content-wrapper {
-        flex-direction: column;
-        max-width: 95%;
-        gap: 30px;
-    }
-    .powerlifting-photo-container,
-    .powerlifting-coaching-container {
-        max-width: 95%;
-    }
-    .powerlifting-photo-container {
-        padding-bottom: 0px;
-        gap: 0px;
-    }
-    .powerlifting-photo-container img {
-        width: 90%;
-    }
-    .powerlifting-content-wrapper {
         max-width: 490px;
         flex-direction: column;
         align-items: center;
         gap: 0px;
     }
+    .powerlifting-photo-container,
     .powerlifting-coaching-container {
-        width: 105%;
+        max-width: 95%;
+    }
+    .powerlifting-photo {
+        width: 80%;
+    }
+    .powerlifting-description {
+        width: 110%;
+    }
+    .powerlifting-coaching-container {
+        width: 100%;
     }
     .powerlifting-coaching-description {
         width: 110%;
