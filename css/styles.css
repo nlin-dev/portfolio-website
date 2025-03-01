@@ -79,7 +79,7 @@ html, body {
     height: 40px;
     border-radius: 5px;
     cursor: grab;
-    border: 2px solid #75AADB;
+    border: 2px solid #F3F1E4;
 }
 .menu-icon img, .icon-btn img {
     width: 80%;
@@ -118,7 +118,7 @@ a:hover, button:hover {
         display: flex;
     }
     .nav-right {
-        gap: 0.25rem;
+        gap: 0.5rem;
     }
     .menu-icon {
         display: flex;
