@@ -1,0 +1,429 @@
+/* Page-specific global styling */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+.projects-contact-wrapper,
+.powerlifting-section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Introduction Section Container Styling */
+.intro-container {
+    background-color: #191A1D;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    gap: 50px;
+}
+.photo-container {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.photo-container img {
+    border-radius: 5px;
+    border: 2px ridge #F3F1E4;
+}
+.about-container {
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+.about-container img {
+    width: 800px;
+    object-fit: contain;
+}
+
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px;
+    margin: 10px auto;
+}
+.about-title {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 10px;
+    
+}
+.about-title img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+    max-width: 100%;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    max-width: 1000px;
+    gap: 15px;
+}
+.about-text p {
+    font-family: "PT Sans Caption", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: bold;
+    color:  #F3F1E4;
+    margin: 0 auto;
+}
+
+
+/* Projects Section Styling */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 20px;
+}
+.projects-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+.projects-title img {
+    width: 100%;
+    max-width: 450px;
+    object-fit: contain;
+}
+/* Carousel Styling */
+#projectsCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.carousel-inner {
+    width: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    top: 50%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    padding: 5px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #191A1D;
+    opacity: 0.4;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* View More Projects Button */
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+.project-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.project-video video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.project-video:hover {
+    transform: scale(1.01);
+    opacity: 0.85;
+}
+
+
+/* Contact Me Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+.contact-title {
+    margin-bottom: 10px;
+}
+.contact-title img {
+    width: 280px;
+}
+.contact-graphic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Powerlifting Section */
+.powerlifting-section {
+    background-image: url("../graphics/index/powerlifting_background.jpg");
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.powerlifting-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    gap: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 550px;
+    width: 95%;
+}
+.powerlifting-title-container:hover {
+    transform: scale(1.05);
+    background-color: #ddd;
+}
+.powerlifting-logo {
+    flex-shrink: 0;
+    width: 20%;
+}
+.powerlifting-logo img {
+    width: 100%;
+}
+.index-powerlifting-title {
+    flex-grow: 1;
+    width: 80%;
+}
+.inde-powerlifting-title img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.powerlifting-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 1200px;
+    width: 95%;
+    text-align: center;
+}
+.powerlifting-photo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 65%;
+    gap: 20px;
+}
+.powerlifting-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.powerlifting-description {
+    width: 80%;
+}
+.powerlifting-coaching-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.powerlifting-coaching-description {
+    width: 100%;
+}
+.powerlifting-coaching-description img {
+    width: 100%;
+}
+.powerlifting-coaching-video {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+.powerlifting-photo img, .powerlifting-description img,
+.powerlifting-coaching-video video, .powerlifting-coaching-description img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+/*  RESPONSIVE DESIGNS  */
+
+/* Intro-Container Width Styling */
+@media (max-width: 1050px) {
+    /* Intro Container Styling */
+    .intro-container {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+    }
+    .photo-container {
+        max-width: 50vw;
+    }
+    .about-container {
+        max-width: 90vw;
+    }
+}
+
+/* About Section Responsive Design */
+@media (max-width: 1050px) {
+    .intro-container {
+        padding-bottom: 50px;
+    }
+    .about-section {
+        padding: 0px;
+    }
+    .about-title {
+        width: 650px;
+    }
+    .about-text {
+        width: 720px;
+    }
+    .about-text p {
+       font-size: 14px;
+       width: 90%;
+    }
+}
+@media (max-width: 725px) {
+    .about-section {
+        padding: 0px;
+    }
+    .about-title {
+        max-width: 90%;
+    }
+    .about-title img {
+        max-height: 30px;
+    }
+    .about-text {
+        max-width: 90%;
+    }
+    .about-text p {
+       font-size: 12px;
+       width: 100%;
+    }
+}
+
+/* Projects Section Responsive Design */
+@media (max-width: 900px) {
+    .projects-title img {
+        max-width: 300px;
+    }
+    #projectsCarousel {
+        max-width: 90%;
+    }
+    .video-box {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    /* Projects Section Styling */
+    .projects-contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .projects-container, .contact-section {
+        max-width: 100%;
+        text-align: center;
+    }
+    .contact-section {
+        align-content: center;
+        padding: 0px;
+        width: 600px;
+    }
+    .powerlifting-content-wrapper {
+        max-width: 490px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .powerlifting-photo-container, .powerlifting-coaching-container {
+        max-width: 95%;
+    }
+    .powerlifting-photo {
+        width: 80%;
+    }
+    .powerlifting-description {
+        width: 100%;
+    }
+    .powerlifting-coaching-container {
+        width: 100%;
+    }
+    .powerlifting-coaching-description {
+        width: 100%;
+    }
+}

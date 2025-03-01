@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Navbar loaded successfully.");
 
-    // Adding a slight boucne effect when hovering over button
+    // Slight Bounce Effect on Navbar Buttons
     const buttons = document.querySelectorAll(".nav-btn, .name-btn");
 
     buttons.forEach(button => {
@@ -14,9 +14,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-});
+    // Highlights Current Page in Navbar
+    const currentPage = window.location.pathname.split("/").pop() || "index.html"; // Default to index.html
 
-function toggleMenu() {
-    const menu = document.querySelector(".nav-middle");
-    menu.classList.toggle("active");
-}
+    document.querySelectorAll(".nav-btn").forEach(link => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        
+        if (linkPage === currentPage) {
+            link.classList.add("current-page");
+        }
+    });
+
+    // Navbar Hamburger Toggle
+    const menuIcon = document.querySelector(".menu-icon");
+    const navLeft = document.querySelector(".nav-left");
+
+    if (menuIcon && navLeft) {
+        menuIcon.addEventListener("click", () => {
+            navLeft.classList.toggle("active");
+        });
+    }
+});

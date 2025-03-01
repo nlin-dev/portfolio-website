@@ -4,42 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> LIN | Project Portfolio </title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
 
-    <div class = "navbar">
+    <div class="navbar">
         <div class="nav-left">
-            <a href="index.html" class="name-btn">
-                <img src="graphics/homepage/name-btn.png" alt="Home">
-            </a>
-        </div>
-
-        <div class="nav-middle">
+            <a href="index.html" class="nav-btn"> HOME </a>
             <a href="about.html" class="nav-btn"> ABOUT </a>
             <a href="projects.html" class="nav-btn"> PROJECTS </a>
             <a href="contact.html" class="nav-btn"> CONTACT </a>
             <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
         </div>
-        
         <div class = "nav-right">
             <!-- Favicon (Burger) -->
             <button class="menu-icon" onclick="toggleMenu()">
                 <img src="graphics/hamburger.png" alt="Menu Icon">
             </button>
             <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
-                <img src="graphics/homepage/github.png" alt="GitHub Icon">
+                <img src="graphics/github.png" alt="GitHub Icon">
             </a>
             <a href="https://www.linkedin.com/in/nicholxslin/"  target="_blank" class="icon-btn">
-                <img src="graphics/homepage/linkedin.png" alt="LinkedIn Icon">
+                <img src="graphics/linkedin.png" alt="LinkedIn Icon">
             </a>
         </div>
     </div>
     
-    <div class="projects-hero-container">
-        <div class="about-container">
-            <img src="graphics/projects/projects_about_description.png" alt="About Me">
+    <div class="intro-container">
+        <div class="projects-title">
+            <img src="graphics/projects/projects-title.png" alt="My Project Portfolio">
+        </div>
+        <div class="projects-description">
+            <div class="projects-description-photo">
+                <img src="graphics/projects/project-main-photo.jpg" alt="My Photo">
+            </div>
+            <div class="projects-description-text">
+                <img src="graphics/projects/projects-description1.png" alt="Project Description 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <img src="graphics/projects/project1.png" alt="Project 1">
+            <a href="projects/more_projects.html">
+                <img src="graphics/projects/project-button.jpg" alt="View More Projects">
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="graphics/projects/project1.png" alt="Project 2">
+            <a href="projects/more_projects.html">
+                <img src="graphics/projects/project-button.jpg" alt="View More Projects">
+            </a>
+        </div>
+        <div class="project-card">
+            <img src="graphics/projects/project1.png" alt="Project 3">
+            <a href="projects/more_projects.html">
+                <img src="graphics/projects/project-button.jpg" alt="View More Projects">
+            </a>
         </div>
     </div>
 
