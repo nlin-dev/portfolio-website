@@ -27,8 +27,8 @@ img, video {
     flex-shrink: 0;
 }
 .photo-container img {
-    border-radius: 5px;
-    border: 2px ridge #F3F1E4;
+    border-radius: 10px;
+    border: 3px solid #F3F1E4;
 }
 .about-container {
     width: 650px;
@@ -183,98 +183,79 @@ img, video {
 
 /* Powerlifting Section */
 .powerlifting-section {
-    background-image: url("../graphics/index/powerlifting_background.jpg");
-    background-size: cover;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    width: 90%;
+    max-width: 1200px;
 }
 .powerlifting-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
-    gap: 10px;
-    border-radius: 10px;
+    width: 450px;
+    border-radius: 15px;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 550px;
-    width: 95%;
 }
 .powerlifting-title-container:hover {
     transform: scale(1.05);
-    background-color: #ddd;
+    background-color: rgba(244,244,244,0.65);
 }
-.powerlifting-logo {
-    flex-shrink: 0;
-    width: 20%;
-}
-.powerlifting-logo img {
-    width: 100%;
-}
-.index-powerlifting-title {
+.powerlifting-title {
     flex-grow: 1;
-    width: 80%;
 }
-.inde-powerlifting-title img {
-    width: 100%;
-    height: auto;
+.powerlifting-title img {
     object-fit: contain;
 }
 .powerlifting-content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    max-width: 1200px;
-    width: 95%;
-    text-align: center;
+    width: 1100px;
+    gap: 1rem;
 }
 .powerlifting-photo-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 65%;
-    gap: 20px;
+    justify-content: center;
+    width: 40%;
+    max-width: 500px;
+    text-align: center;
+}
+.powerlifting-photo {
+    max-width: 325px;
 }
 .powerlifting-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 3px ridge #F4F4F4;
 }
 .powerlifting-description {
-    width: 80%;
+    width: 95%;
 }
 .powerlifting-coaching-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 45%;
-    padding: 20px;
-    border-radius: 10px;
 }
 .powerlifting-coaching-description {
     width: 100%;
-}
-.powerlifting-coaching-description img {
-    width: 100%;
+    max-width: 450px;
+    margin-bottom: 2rem;
 }
 .powerlifting-coaching-video {
-    width: 100%;
-    max-width: 420px;
-    height: auto;
+    max-width: 450px;
+    border-radius: 10px;
 }
-.powerlifting-photo img, .powerlifting-description img,
-.powerlifting-coaching-video video, .powerlifting-coaching-description img {
-    width: 100%;
+.powerlifting-coaching-video video {
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 2px solid #F3F1E4;
 }
 
 
@@ -351,50 +332,45 @@ img, video {
     }
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-    /* Projects Section Styling */
-    .projects-contact-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+/* Powerlifting Section Styling */
+@media (max-width: 1025px) {
+    .powerlifting-section {
+        padding-top: 0px;
+        max-width: 90%;
     }
-    .projects-container, .contact-section {
-        max-width: 100%;
-        text-align: center;
-    }
-    .contact-section {
-        align-content: center;
-        padding: 0px;
-        width: 600px;
+    .powerlifting-title-container {
+        max-width: 80%;
+        margin-bottom: 1rem;
     }
     .powerlifting-content-wrapper {
-        max-width: 490px;
+        max-width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 0px;
     }
-    .powerlifting-photo-container, .powerlifting-coaching-container {
-        max-width: 95%;
+    .powerlifting-photo-container, .powerlifting-coaching-container,
+    .powerlifting-coaching-video {
+        width: 500px;
+        max-width: 100%;
     }
     .powerlifting-photo {
-        width: 80%;
+        width: 65%;
+    }
+    .powerlifting-photo img {
+        border: 1.5px solid #F3F1E4;
     }
     .powerlifting-description {
         width: 100%;
     }
     .powerlifting-coaching-container {
-        width: 100%;
+        width: 500px;
+        max-width: 100%;
     }
     .powerlifting-coaching-description {
+        max-width: 500px;
         width: 100%;
+    }
+    .powerlifting-coaching-description img {
+        width: 100%;
+        height: auto;
     }
 }
