@@ -1,51 +1,17 @@
 /* Intro Container Styling */
 .intro-container {
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 0px;
-    padding: 20px;
+    align-content: center;
+    margin: 2rem auto;
 }
 .projects-title {
-    margin-top: 20px;
     text-align: center;
-    border: 2px solid gold;
 }
 .projects-title img {
-    width: 80%;
-    max-width: 700px;
-}
-.projects-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
-    flex-direction: row;
-    border: 2px solid gold;
-}
-.projects-description-photo {
-    width: 30%;
-    align-items: center;
-    max-width: 300px;
-    border: 4px solid purple;
-}
-.projects-description-photo img {
-    width: 100%;
-    opacity: 0.9;
-}
-.projects-description-text {
-    width: 60%;
-    max-width: 800px;
-}
-.projects-description-text img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border: 2px solid blue;
+    max-height: 2.5rem;
+    width: auto;
 }
 
 /* Project Cards Section */
