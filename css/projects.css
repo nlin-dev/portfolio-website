@@ -1,8 +1,5 @@
-
 /* Intro Container Styling */
 .intro-container {
-    background-color: #14181D;
-    background: url("../graphics/projects/projects_about_background.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
