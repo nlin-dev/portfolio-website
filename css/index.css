@@ -213,7 +213,6 @@ img, video {
     justify-content: center;
     align-items: center;
     width: 1100px;
-    gap: 1rem;
 }
 .powerlifting-photo-container {
     display: flex;
@@ -262,47 +261,41 @@ img, video {
 @media (max-width: 1050px) {
     /* Intro Container Styling */
     .intro-container {
-        gap: 10px;
+        gap: 0px;
         flex-direction: column;
         align-items: center;
-        padding: 25px;
+        margin: 2.5rem auto;
     }
     .photo-container {
-        max-width: 50vw;
+        max-width: 45%;
     }
     .about-container {
-        max-width: 90vw;
+        max-width: 90%;
     }
 }
 
 /* About Section Responsive Design */
 @media (max-width: 1050px) {
-    .intro-container {
-        padding-bottom: 50px;
-    }
     .about-section {
-        padding: 0px;
+        margin: 2.5rem auto;
     }
     .about-title {
         width: 650px;
     }
     .about-text {
-        width: 720px;
+        width: 650px;
     }
     .about-text p {
        font-size: 14px;
-       width: 90%;
+       width: 100%;
     }
 }
 @media (max-width: 725px) {
-    .about-section {
-        padding: 0px;
-    }
     .about-title {
         max-width: 90%;
     }
     .about-title img {
-        max-height: 30px;
+       max-height: 1.5rem;
     }
     .about-text {
         max-width: 90%;
@@ -315,6 +308,9 @@ img, video {
 
 /* Projects Section Responsive Design */
 @media (max-width: 890px) {
+    .projects-container {
+        margin: 2.5rem auto;
+    }
     #projectsCarousel {
         max-width: 90%;
     }
@@ -323,6 +319,9 @@ img, video {
     }
 }
 @media (max-width: 725px) {
+    .projects-title img{
+        max-height: 1.5rem;
+    }
     .projects-title img {
         max-width: 350px;
     }
@@ -331,12 +330,12 @@ img, video {
 /* Powerlifting Section Styling */
 @media (max-width: 1025px) {
     .powerlifting-section {
-        padding-top: 0px;
         max-width: 90%;
+        margin: 2.5rem auto;
     }
     .powerlifting-title-container {
         max-width: 80%;
-        margin-bottom: 1rem;
+        margin: 1rem auto;
     }
     .powerlifting-content-wrapper {
         max-width: 100%;
