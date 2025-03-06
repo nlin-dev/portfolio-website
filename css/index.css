@@ -1,4 +1,7 @@
 /* Page-specific global styling */
+.body, button, .nav-btn, .icon-btn {
+    font-family: "PT Sans", "PT Sans Caption", sans-serif !important;
+}
 img, video {
     max-width: 100%;
     height: auto;
