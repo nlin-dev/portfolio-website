@@ -9,6 +9,7 @@ html, body {
     overflow-x: hidden;
     margin-top: 35px;
     font-family: "PT-Sans", sans-serif;
+    font-display: swap;
     background-color: #191A1D;
 }
 
