@@ -14,8 +14,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@600&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" as="style">
 </head>
 
 <body>
@@ -43,7 +43,29 @@
         </div>
     </div>
 
+    <div class="contact-container">
     
+        <img src="graphics/contact/contact-info.png" alt="Contact Introduction" class="contact-intro">
+
+        <img src="graphics/contact/contact-title.png" alt="My Contact Links" class="contact-title">
+
+        <div class="button-container">
+            <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank" class="contact-button">
+                <img src="graphics/contact/linkedin-contact.jpg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/nlin-dev" target="_blank" class="contact-button">
+                <img src="graphics/contact/github-contact.jpg" alt="GitHub Contact">
+            </a>
+            <a href="mailto:nl2872@columbia.edu?subject=Website%20Connection%20Invite" class="contact-button">
+                <img src="graphics/contact/email-contact.jpg" alt="Email Contact">
+            </a>
+            <a class="contact-button">
+                <img src="graphics/contact/phone-contact.jpg" alt="Phone Contact">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>
