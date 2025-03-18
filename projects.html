@@ -20,28 +20,43 @@
 
 <body>
 
-    <div class="navbar">
-        <div class="burger-container">
-            <button class="menu-icon" onclick="toggleMenu()">
-                <img src="graphics/hamburger.png" alt="Menu Icon">
+    <nav class="navbar">
+        <div class="navbar-wrapper">
+            <!-- Left Navbar Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="graphics/index/logo.png" alt="LIN Logo">
+            </a>
+            <!-- Page Navigation Links -->
+            <div class="nav-links">
+                <a href="about.html" class="nav-btn"> ABOUT </a>
+                <a href="projects.html" class="nav-btn"> PROJECTS </a>
+                <a href="contact.html" class="nav-btn"> CONTACT </a>
+                <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
+            </div>
+            <!-- Right Navbar Social Media Icons -->
+            <div class="nav-icons">
+                <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank" class="icon-btn">
+                    <img src="graphics/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
+                    <img src="graphics/github.png" alt="GitHub">
+                </a>
+            </div>
+            <button class="menu-icon">
+                <img src="graphics/hamburger.png" alt="Menu">
             </button>
         </div>
-        <div class="nav-left">
-            <a href="index.html" class="nav-btn"> HOME </a>
-            <a href="about.html" class="nav-btn"> ABOUT </a>
-            <a href="projects.html" class="nav-btn"> PROJECTS </a>
-            <a href="contact.html" class="nav-btn"> CONTACT </a>
-            <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
-        </div>
-        <div class = "nav-right">
-            <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
-                <img src="graphics/github.png" alt="GitHub Icon">
-            </a>
-            <a href="https://www.linkedin.com/in/nicholxslin/"  target="_blank" class="icon-btn">
-                <img src="graphics/linkedin.png" alt="LinkedIn Icon">
-            </a>
-        </div>
-    </div>
+    </nav>
+
+    <!-- Mobile Menu Viewport -->
+    <div class="mobile-menu">
+        <a href="about.html"> ABOUT </a>
+        <a href="projects.html"> PROJECTS </a>
+        <a href="contact.html"> CONTACT </a>
+        <a href="powerlifting.html"> POWERLIFTING </a>
+        <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank"> MY LINKEDIN </a>
+        <a href="https://github.com/nlin-dev?tab=repositories" target="_blank"> MY GITHUB </a>
+     </div>
     
     <div class="intro-container">
         <div class="projects-title">

@@ -1,132 +1,98 @@
 /* Page-specific global styling */
-.body, button, .nav-btn, .icon-btn {
-    font-family: "PT Sans", "PT Sans Caption", sans-serif !important;
+body {
+    background-color: #F6F6F6;
 }
 img, video {
     max-width: 100%;
     height: auto;
 }
-.projects-contact-wrapper,
-.powerlifting-section {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 /* Introduction Section Container Styling */
 .intro-container {
-    background-color: #191A1D;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem auto;
-    gap: 3rem;
-}
-.photo-container {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-.photo-container img {
-    border-radius: 10px;
-    border: 3px solid #F3F1E4;
-}
-.about-container {
-    width: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-shrink: 0;
-}
-.about-container img {
-    width: 800px;
-    object-fit: contain;
-}
-
-
-/* About Section Styling */
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
-    margin: 5rem auto;
+    margin: 0 auto;
+    background: url("../graphics/index/intro-wide-background.jpg") no-repeat center/cover;  
+    border-bottom: 0.125rem ridge #191A1D;
 }
-.about-title {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
+.intro-container-image {
     width: 100%;
-    max-width: 1000px;
-    margin-bottom: 10px;
-    
+    max-width: 60rem;
 }
-.about-title img {
-    max-height: 2rem;
-    width: auto;
-    display: block;
-    max-width: 100%;
-}
-.about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: left;
-    max-width: 1000px;
-    gap: 15px;
-}
-.about-text p {
-    font-family: "PT Sans Caption", serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: bold;
-    color:  #F3F1E4;
+.intro-container-image img {
+    width: 100%;
     margin: 0 auto;
 }
 
+/* About Section Styling */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 93.75rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 0.125rem ridge #191A1D;
+}
 
-/* Projects Section Styling */
-.projects-container {
+.about-left {
+    flex: 1 1 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 5rem auto;
 }
-.projects-title {
-    display: flex;
+.about-left-image {
+    width: 100%;
     justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+.about-left-image img {
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 1rem;
 }
-.projects-title img {
-    max-height: 2rem;
-    object-fit: contain;
+
+.about-right {
+    flex: 1 1 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("../graphics/index/about-right.jpg") no-repeat center/cover;
 }
+.about-right {
+    width: 100%;
+}
+
 /* Carousel Styling */
+.carousel-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
 #projectsCarousel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
+    box-shadow: 0 0.31rem 0.62rem rgba(0,0,0,0.4);
 }
 .carousel-inner {
     width: 100%;
 }
 .carousel-item img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 .carousel-control-prev,
@@ -141,46 +107,39 @@ img, video {
 }
 .carousel-control-prev,
 .carousel-control-next {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background-color: rgba(25,26,29,0.3);
     border-radius: 50%;
-    padding: 5px;
+    padding: 0.31rem;
+}
+.carousel-control-prev {
+    margin-left: 0.01rem;
+}
+.carousel-control-next {
+    margin-right: 0.01rem;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: #191A1D;
     opacity: 0.4;
 }
-/* View More Projects Button */
-.video-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-}
-.project-video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 3px solid #F4F4F4;
-}
-.project-video video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.project-video:hover {
-    transform: scale(1.01);
-    opacity: 0.85;
-}
 
+/* More Projects Button */
+.carousel-button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+}
+.carousel-btn-link img{
+    width: 45%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    border-radius: 0.31rem;
+    box-shadow: 0 0.31rem 0.62rem rgba(0,0,0,0.4);
+}
 
 /* Powerlifting Section */
 .powerlifting-section {
@@ -189,16 +148,17 @@ img, video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5rem auto;
-    width: 90%;
-    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    width: 100%;
+    background-color: #191A1D;
 }
 .powerlifting-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    border-radius: 15px;
+    width: 28.125rem;
+    border-radius: 0.9rem;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .powerlifting-title-container:hover {
@@ -260,82 +220,38 @@ img, video {
 
 /*  RESPONSIVE DESIGNS  */
 
-/* Intro-Container Width Styling */
-@media (max-width: 1050px) {
-    /* Intro Container Styling */
-    .intro-container {
-        gap: 0px;
+/* About Section Responsive Design */
+@media (max-width: 62.5rem) {
+    .about-container {
         flex-direction: column;
         align-items: center;
-        margin: 2.5rem auto;
     }
-    .photo-container {
-        max-width: 45%;
+    .about-left {
+        width: 100%;
+        min-height: 18.75rem;
+        background: url("../graphics/index/about-left-mobile.jpg") no-repeat center/cover;
     }
+    .about-left-image img {
+        display: none;
+    }
+    .carousel-section {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 93.75rem) {
     .about-container {
-        max-width: 90%;
+        margin: 1.5rem auto;
+        border-radius: 10px;
+        border: 0rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+        overflow: hidden;
     }
 }
 
-/* About Section Responsive Design */
-@media (max-width: 1050px) {
-    .about-section {
-        margin: 2.5rem auto;
-    }
-    .about-title {
-        width: 650px;
-    }
-    .about-text {
-        width: 650px;
-    }
-    .about-text p {
-       font-size: 14px;
-       width: 100%;
-    }
-}
-@media (max-width: 725px) {
-    .about-title {
-        max-width: 90%;
-    }
-    .about-title img {
-       max-height: 1.5rem;
-    }
-    .about-text {
-        max-width: 90%;
-    }
-    .about-text p {
-       font-size: 12px;
-       width: 100%;
-    }
-}
-
-/* Projects Section Responsive Design */
-@media (max-width: 890px) {
-    .projects-container {
-        margin: 2.5rem auto;
-    }
-    #projectsCarousel {
-        max-width: 90%;
-    }
-    .video-box {
-        max-width: 90%;
-    }
-}
-@media (max-width: 725px) {
-    .projects-title img{
-        max-height: 1.5rem;
-    }
-    .projects-title img {
-        max-width: 350px;
-    }
-}
 
 /* Powerlifting Section Styling */
 @media (max-width: 1025px) {
-    .powerlifting-section {
-        max-width: 90%;
-        margin: 2.5rem auto;
-    }
     .powerlifting-title-container {
         max-width: 80%;
         margin: 1rem auto;

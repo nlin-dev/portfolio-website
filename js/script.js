@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Navbar Hamburger Toggle
     const menuIcon = document.querySelector(".menu-icon");
-    const navLeft = document.querySelector(".nav-left");
+    const navLeft = document.querySelector(".mobile-menu");
 
     if (menuIcon && navLeft) {
         menuIcon.addEventListener("click", () => {
