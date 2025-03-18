@@ -4,34 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> LIN | Powerlifting </title>
+    <link rel="icon" type="image/png" href="graphics/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/powerlifting.css">
+
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
     
-    <div class="navbar">
-        <div class="nav-left">
-            <a href="index.html" class="nav-btn"> HOME </a>
-            <a href="about.html" class="nav-btn"> ABOUT </a>
-            <a href="projects.html" class="nav-btn"> PROJECTS </a>
-            <a href="contact.html" class="nav-btn"> CONTACT </a>
-            <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
-        </div>
-        
-        <div class = "nav-right">
-            <!-- Favicon (Burger) -->
-            <button class="menu-icon" onclick="toggleMenu()">
-                <img src="graphics/hamburger.png" alt="Menu Icon">
+    <nav class="navbar">
+        <div class="navbar-wrapper">
+            <!-- Left Navbar Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="graphics/index/logo.png" alt="LIN Logo">
+            </a>
+            <!-- Page Navigation Links -->
+            <div class="nav-links">
+                <a href="about.html" class="nav-btn"> ABOUT </a>
+                <a href="projects.html" class="nav-btn"> PROJECTS </a>
+                <a href="contact.html" class="nav-btn"> CONTACT </a>
+                <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
+            </div>
+            <!-- Right Navbar Social Media Icons -->
+            <div class="nav-icons">
+                <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank" class="icon-btn">
+                    <img src="graphics/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
+                    <img src="graphics/github.png" alt="GitHub">
+                </a>
+            </div>
+            <button class="menu-icon">
+                <img src="graphics/hamburger.png" alt="Menu">
             </button>
-            <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
-                <img src="graphics/github.png" alt="GitHub Icon">
-            </a>
-            <a href="https://www.linkedin.com/in/nicholxslin/"  target="_blank" class="icon-btn">
-                <img src="graphics/linkedin.png" alt="LinkedIn Icon">
-            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Viewport -->
+    <div class="mobile-menu">
+        <a href="about.html"> ABOUT </a>
+        <a href="projects.html"> PROJECTS </a>
+        <a href="contact.html"> CONTACT </a>
+        <a href="powerlifting.html"> POWERLIFTING </a>
+        <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank"> MY LINKEDIN </a>
+        <a href="https://github.com/nlin-dev?tab=repositories" target="_blank"> MY GITHUB </a>
+     </div>
+    
+    <div class="powerlifting-wrapper">
+        <div class="powerlifting-logo">
+            <img src="graphics/powerlifting/powerlifting-title.png" alt="Powerlifting Logo">
+        </div>
+        <div class="powerlifting-construction">
+            <img src="graphics/powerlifting/construction.jpg" alt="Under Construction">
         </div>
     </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>

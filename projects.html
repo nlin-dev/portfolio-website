@@ -4,70 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> LIN | Project Portfolio </title>
+    <link rel="icon" type="image/png" href="graphics/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/projects.css">
+
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-    <div class="navbar">
-        <div class="nav-left">
-            <a href="index.html" class="nav-btn"> HOME </a>
-            <a href="about.html" class="nav-btn"> ABOUT </a>
-            <a href="projects.html" class="nav-btn"> PROJECTS </a>
-            <a href="contact.html" class="nav-btn"> CONTACT </a>
-            <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
-        </div>
-        <div class = "nav-right">
-            <!-- Favicon (Burger) -->
-            <button class="menu-icon" onclick="toggleMenu()">
-                <img src="graphics/hamburger.png" alt="Menu Icon">
+    <nav class="navbar">
+        <div class="navbar-wrapper">
+            <!-- Left Navbar Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="graphics/index/logo.png" alt="LIN Logo">
+            </a>
+            <!-- Page Navigation Links -->
+            <div class="nav-links">
+                <a href="about.html" class="nav-btn"> ABOUT </a>
+                <a href="projects.html" class="nav-btn"> PROJECTS </a>
+                <a href="contact.html" class="nav-btn"> CONTACT </a>
+                <a href="powerlifting.html" class="nav-btn"> POWERLIFTING </a>
+            </div>
+            <!-- Right Navbar Social Media Icons -->
+            <div class="nav-icons">
+                <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank" class="icon-btn">
+                    <img src="graphics/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
+                    <img src="graphics/github.png" alt="GitHub">
+                </a>
+            </div>
+            <button class="menu-icon">
+                <img src="graphics/hamburger.png" alt="Menu">
             </button>
-            <a href="https://github.com/nlin-dev?tab=repositories" target="_blank" class="icon-btn">
-                <img src="graphics/github.png" alt="GitHub Icon">
-            </a>
-            <a href="https://www.linkedin.com/in/nicholxslin/"  target="_blank" class="icon-btn">
-                <img src="graphics/linkedin.png" alt="LinkedIn Icon">
-            </a>
         </div>
-    </div>
+    </nav>
+
+    <!-- Mobile Menu Viewport -->
+    <div class="mobile-menu">
+        <a href="about.html"> ABOUT </a>
+        <a href="projects.html"> PROJECTS </a>
+        <a href="contact.html"> CONTACT </a>
+        <a href="powerlifting.html"> POWERLIFTING </a>
+        <a href="https://www.linkedin.com/in/nicholxslin/" target="_blank"> MY LINKEDIN </a>
+        <a href="https://github.com/nlin-dev?tab=repositories" target="_blank"> MY GITHUB </a>
+     </div>
     
     <div class="intro-container">
         <div class="projects-title">
             <img src="graphics/projects/projects-title.png" alt="My Project Portfolio">
         </div>
-        <div class="projects-description">
-            <div class="projects-description-photo">
-                <img src="graphics/projects/project-main-photo.jpg" alt="My Photo">
-            </div>
-            <div class="projects-description-text">
-                <img src="graphics/projects/projects-description1.png" alt="Project Description 1">
-            </div>
-        </div>
     </div>
 
     <div class="projects-container">
-
         <div class="project-card">
-            <img src="graphics/projects/project1.png" alt="Project 1">
-            <a href="projects/more_projects.html">
-                <img src="graphics/projects/project-button.jpg" alt="View More Projects">
-            </a>
+            <img src="graphics/projects/tldr-card.jpg" alt="TLDR Health">
+            <div class="project-links">
+                <a href="https://www.tldrhealth.us/" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/website.png" alt="Website Icon">
+                </a>
+                <a href="https://drive.google.com/drive/u/0/folders/1agwnLV_c-UuHbuWQ2lqb0mg3YNKeBBzB" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/data.png" alt="Data Icon">
+                </a>
+                <a href="https://github.com/kelvinxiao01/devfest-frontend" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/github.png" alt="GitHub Icon">
+                </a>        
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <img src="graphics/projects/deep-learning-card.jpg" alt="Deep Learning Options">
+            <div class="project-links">
+                <a href="https://drive.google.com/drive/folders/14UDaBowufW9BTIz6CvdKxtkL2l0c_DAB" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/data.png" alt="Data Icon">
+                </a>
+                <a href="https://github.com/nlin-dev/deep-learning-options-pricing" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/github.png" alt="GitHub Icon">
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <img src="graphics/projects/project1.png" alt="Project 2">
-            <a href="projects/more_projects.html">
-                <img src="graphics/projects/project-button.jpg" alt="View More Projects">
-            </a>
+            <img src="graphics/projects/dropout-card.jpg" alt="Student Dropout">
+            <div class="project-links">
+                <a href="https://github.com/nlin-dev/undergrad_dropout_prediction_models/tree/main/data" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/data.png" alt="Data Icon">
+                </a>
+                <a href="https://github.com/nlin-dev/undergrad_dropout_prediction_models" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/github.png" alt="GitHub Icon">
+                </a>
+            </div>
         </div>
         <div class="project-card">
-            <img src="graphics/projects/project1.png" alt="Project 3">
-            <a href="projects/more_projects.html">
-                <img src="graphics/projects/project-button.jpg" alt="View More Projects">
-            </a>
+            <img src="graphics/projects/spotify-card.jpg" alt="Spotify Classification">
+            <div class="project-links">
+                <a href="https://github.com/nlin-dev/spotify-music-classification/blob/main/Spotify%20Classification%20Paper.pdf" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/paper.png" alt="Paper Icon">
+                </a>
+                <a href="https://github.com/nlin-dev/spotify-music-classification/tree/main/notebooks/data" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/data.png" alt="Data Icon">
+                </a>
+                <a href="https://github.com/nlin-dev/spotify-music-classification" target="_blank" class="project-link-btn">
+                    <img src="graphics/projects/github.png" alt="GitHub Icon">
+                </a>
+            </div>
         </div>
     </div>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>
