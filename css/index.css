@@ -97,27 +97,24 @@ img, video {
 }
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%;
-    height: 15%;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.7;
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-    top: 50%;
-}
-.carousel-control-prev,
-.carousel-control-next {
     width: 1.875rem;
     height: 1.875rem;
-    background-color: rgba(25,26,29,0.3);
-    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    top: 50%;
     padding: 0.31rem;
+    border-radius: 50%;
+
+    background-color: rgba(25,26,29,0.3);
+    opacity: 0.7;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 .carousel-control-prev {
-    margin-left: 0.01rem;
+    margin-left: 0.2rem;
 }
 .carousel-control-next {
-    margin-right: 0.01rem;
+    margin-right: 0.2rem;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
@@ -228,7 +225,7 @@ img, video {
     }
     .about-left {
         width: 100%;
-        min-height: 35vw;
+        min-height: 38vw;
         background: url("../graphics/index/about-left-mobile.jpg") no-repeat center/cover;
     }
     .about-left-image img {
