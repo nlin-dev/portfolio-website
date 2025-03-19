@@ -228,7 +228,7 @@ img, video {
     }
     .about-left {
         width: 100%;
-        min-height: 18.75rem;
+        min-height: 35vw;
         background: url("../graphics/index/about-left-mobile.jpg") no-repeat center/cover;
     }
     .about-left-image img {
